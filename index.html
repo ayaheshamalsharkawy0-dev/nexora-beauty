@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORA Beauty | Warm Luxury Cosmetics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">NEXORA <span>BEAUTY</span></a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#collection">Collection</a>
+                <a href="#about">Our Philosophy</a>
+            </nav>
+            <button class="cart-btn" id="open-cart">
+                Bag (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <!-- Split Hero Section (Designed for your vertical hero image) -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="subtitle">NEW SEASON COLLECTION</span>
+                <h1>Radiant Warmth, Effortless Elegance.</h1>
+                <p>Discover velvety textures, golden undertones, and richly pigmented essentials crafted to enhance your natural glow.</p>
+                <div class="hero-actions">
+                    <a href="#collection" class="btn-primary">Explore Collection</a>
+                    <a href="#about" class="btn-secondary">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="images/hero.jpg" alt="NEXORA Luxury Makeup Collection">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="collection">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">CURATED ESSENTIALS</span>
+                <h2>The Warm Tone Edit</h2>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="face">Face</button>
+                    <button class="filter-btn" data-category="lips">Lips</button>
+                    <button class="filter-btn" data-category="eyes">Eyes</button>
+                    <button class="filter-btn" data-category="tools">Tools</button>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Philosophy Section -->
+    <section class="about-section" id="about">
+        <div class="container about-content">
+            <span class="subtitle">NEXORA PHILOSOPHY</span>
+            <h2>Beauty Rooted in Warmth & Confidence</h2>
+            <p>Every formula in the NEXORA Beauty collection is thoughtfully developed with skin-loving ingredients, weightless finishes, and universally flattering caramel, terracotta, and champagne tones.</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>Cruelty-Free</h4>
+                    <p>100% ethically crafted without animal testing.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Velvet Pigments</h4>
+                    <p>Blendable, long-wearing formulas for all-day radiance.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Warm Undertones</h4>
+                    <p>Curated shades that flatter every complexion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>NEXORA <span>BEAUTY</span></h3>
+                <p>Elevating everyday beauty with warm luxury essentials.</p>
+            </div>
+            <p class="copyright">&copy; 2026 NEXORA Ecosystem. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Bag Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Beauty Bag</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-msg">Your bag is currently empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn-primary checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Added to your beauty bag</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
